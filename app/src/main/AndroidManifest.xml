@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qibei.gugu">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.qibei.gugu.common.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:name="com.qibei.gugu.MainActivity"
+                  android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--登录 -->
+        <activity android:name="com.qibei.gugu.activity.LoginActivity"></activity>
+        <!--注册 -->
+        <activity android:name="com.qibei.gugu.activity.RegisterActivity"></activity>
+        <!--找医院 -->
+        <activity android:name="com.qibei.gugu.activity.FindHospitalActivity"></activity>
+        <!--找医生 -->
+        <activity android:name="com.qibei.gugu.activity.FindDoctorActivity"></activity>
+        <!--医院详情 -->
+        <activity android:name="com.qibei.gugu.activity.HospitalDetailActivity"></activity>
+        <!--医生详情 -->
+        <activity android:name="com.qibei.gugu.activity.DoctorDetailsActivity"></activity>
+        <!--我的 -->
+        <activity android:name="com.qibei.gugu.activity.PersonalInformationActivity"></activity>
+        <!--设置 -->
+        <activity android:name="com.qibei.gugu.activity.SetingActivity"></activity>
+        <!--我的订单详情 -->
+        <activity android:name="com.qibei.gugu.activity.MyOrderDetailsActivity"></activity>
+        <!--订单修改 -->
+        <activity android:name="com.qibei.gugu.activity.OrderModifyActivity"></activity>
+        <!--我的收藏 -->
+        <activity android:name="com.qibei.gugu.activity.MyCollectionActivity"></activity>
+        <!--我的订单 -->
+        <activity android:name="com.qibei.gugu.activity.MyOrderActivity"></activity>
+        <!--订单详情 -->
+        <activity android:name="com.qibei.gugu.activity.OrderDetailsActivity"></activity>
+        <!--测试 -->
+        <activity android:name="com.qibei.gugu.activity.TestActivity"></activity>
+        <!--咨询 -->
+        <activity
+            android:name="com.qibei.gugu.activity.ConsultationActivity"
+            android:theme="@style/Transparent"></activity>
+        <!--个人信息 -->
+        <activity android:name="com.qibei.gugu.activity.UserInfoActivity"></activity>
+        <!--关于呱呱 -->
+        <activity android:name="com.qibei.gugu.activity.AboutActivity"></activity>
+        <!--账号与安全 -->
+        <activity android:name="com.qibei.gugu.activity.AccountSecurityActivity"></activity>
+        <!--服务条款 -->
+        <activity android:name="com.qibei.gugu.activity.ServiceProvisionActivity"></activity>
+        <!--代金卷 -->
+        <activity android:name="com.qibei.gugu.activity.VoucherActivity"></activity>
+        <!--我的银行卡 -->
+        <activity android:name="com.qibei.gugu.activity.MyBankCardActivity"></activity>
+        <!--支付 -->
+        <activity android:name="com.qibei.gugu.activity.PayActivity"></activity>
+
+        <!--支付 -->
+        <activity android:name="com.qibei.gugu.activity.PayReturnActivity"></activity>
+
+        <!--查百科 -->
+        <activity android:name="com.qibei.gugu.activity.FindEncyclopediasActivity"></activity>
+
+        <!--查百科 -->
+        <activity android:name="com.qibei.gugu.activity.EncyclopediasDetailActivity"></activity>
+
+        <activity android:name="com.qibei.gugu.sample.StaggeredGridActivity"/>
+        <activity android:name="com.qibei.gugu.sample.StaggeredGridActivityFragment"/>
+        <activity android:name="com.qibei.gugu.sample.StaggeredGridEmptyViewActivity" />
+        <activity android:name="com.qibei.gugu.sample.ListViewActivity"/>
+
+        <!--产品详情 -->
+        <activity android:name="com.qibei.gugu.activity.ProductDetailsActivity"></activity>
+
+        <!--海外试管项目 -->
+        <activity android:name="com.qibei.gugu.activity.TubeBabyActivity"></activity>
+
+        <!--空白Activity -->
+        <activity android:name="com.qibei.gugu.activity.BlankActivity"></activity>
+
+        <!--月子中心 -->
+        <activity android:name="com.qibei.gugu.activity.MaternityHotelsActivity"></activity>
+
+        <!--房间详情 -->
+        <activity android:name="com.qibei.gugu.activity.RoomDetailsActivity"></activity>
+
+
+        <!--订单详情 -->
+        <activity android:name="com.qibei.gugu.activity.AdviseActivity"></activity>
+
+        <!--宝宝档案 -->
+        <activity android:name="com.qibei.gugu.activity.BabyFileActivity"></activity>
+
+        <!--刷新框架 -->
+        <activity android:name="com.qibei.gugu.PullToRefreshListActivity"></activity>
+
+
+
+    </application>
+
+</manifest>

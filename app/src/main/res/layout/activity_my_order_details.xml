@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back_gray"
+    android:orientation="vertical">
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_moda_order_deails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="订单详情">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <include layout="@layout/item_doctor_product"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="7dp"
+        android:paddingLeft="7dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="购买人信息"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tv_moda_modify_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="购买人信息"
+                android:textSize="14sp"
+                android:background="@drawable/login_border"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blank_block"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="中文名"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_marginRight="7dp"
+                android:text="李志鹏"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blank_block"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="证件号码"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_marginRight="7dp"
+                android:text="432524199308071413(身份证)"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blank_block"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="中文名"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_marginRight="7dp"
+                android:text="15074478436"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blank_block"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="邮箱"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_marginRight="7dp"
+                android:text="2271435806@qq.com"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="购买人信息"
+                android:textSize="14sp"
+                />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blank_block"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="接机服务"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_marginRight="7dp"
+                android:textColor="#FF4846"
+                android:text="30元"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <ToggleButton
+                android:id="@+id/mTogBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/toggle_btn"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blank_block"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="包餐服务"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_marginRight="7dp"
+                android:textColor="#FF4846"
+                android:text="100元"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <ToggleButton
+                android:id="@+id/mTogBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/toggle_btn"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blank_block"
+            />
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#FF4846"
+            android:text="合计 6029元"/>
+        <Button
+            android:id="@+id/bt_moda_buying"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#64D5C0"
+            android:text="去结算"/>
+    </LinearLayout>
+
+</LinearLayout>

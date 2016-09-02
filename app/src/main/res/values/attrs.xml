@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <declare-styleable name="SetOrderInfoView">
+            <attr name="left_title" format="string" />
+            <attr name="right_title" format="string" />
+            <attr name="right_title_show" format="boolean" />
+            <attr name="image_show" format="boolean" />
+            <attr name="text_color" format="color" />
+        </declare-styleable>
+
+        <declare-styleable name="CommonTopView">
+            <attr name="top_back" format="boolean" />
+            <attr name="top_title" format="string" />
+            <attr name="top_function" format="boolean" />
+            <attr name="top_src" format="reference" />
+        </declare-styleable>
+
+        <!--导航头 -->
+        <declare-styleable name="NavigationHeadView">
+            <attr name="nhv_title" format="string" />
+        </declare-styleable>
+
+    <declare-styleable name="StaggeredGridView">
+        <attr name="column_count" format="integer" />
+        <attr name="column_count_portrait" format="integer" />
+        <attr name="column_count_landscape" format="integer" />
+        <attr name="item_margin" format="dimension" />
+        <attr name="grid_paddingLeft" format="dimension" />
+        <attr name="grid_paddingRight" format="dimension" />
+        <attr name="grid_paddingTop" format="dimension" />
+        <attr name="grid_paddingBottom" format="dimension" />
+    </declare-styleable>
+
+</resources>

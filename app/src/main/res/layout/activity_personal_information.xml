@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_pia_perfect_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="完善信息">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="中文名"
+        qb:image_show="false"
+        qb:text_color="#666666"
+        qb:right_title="请填写真实姓名">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="拼音名"
+        qb:image_show="false"
+        qb:text_color="#666666"
+        qb:right_title="请填写姓名拼音">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="性别"
+        qb:text_color="#666666"
+        qb:right_title="请选择性别">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="出生年月"
+        qb:text_color="#666666"
+        qb:right_title="请选择出生年份">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="国籍"
+        qb:text_color="#666666"
+        qb:right_title="请选择国籍">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#bfbfbf" />
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="证件类型"
+        qb:text_color="#666666"
+        qb:right_title="请选择证件类型">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="证件号码"
+        qb:image_show="false"
+        qb:text_color="#666666"
+        qb:right_title="请选择证件号码">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#bfbfbf" />
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="联系电话"
+        qb:image_show="false"
+        qb:text_color="#666666"
+        qb:right_title="请填写联系号码">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="邮箱地址"
+        qb:image_show="false"
+        qb:text_color="#666666"
+        qb:right_title="请填写邮箱地址">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_pia_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center"
+        android:text="下一步"
+        android:background="#64D5C0"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

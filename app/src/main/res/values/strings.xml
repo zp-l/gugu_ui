@@ -1,0 +1,24 @@
+<resources>
+
+
+    <string name="copyright">上海祁贝健康资讯管理有限公司 版权所有</string>">
+    <string name="app_name">呱呱</string>
+
+    <string name="login">登录</string>
+    <string name="account">账号</string>
+    <string name="account_hint">请输入账号</string>
+    <string name="pwd">密码</string>
+    <string name="pwd_hint">请输入密码</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="login_massage">或者还可以通过以下方式登录</string>
+
+    <string name="register">注册</string>
+    <string name="phone_number">手机号</string>
+    <string name="phone_number_hint">请输入手机号</string>
+    <string name="verification_code">验证码</string>
+    <string name="send_verification_code">发送验证码</string>
+    <string name="verification_code_hint">请输入验证码</string>
+    <string name="pwd_hint2">请输入8至16位密码</string>
+    <string name="agreement">同意呱呱服务协议</string>
+
+</resources>

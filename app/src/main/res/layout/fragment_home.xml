@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bd_white"
+    android:paddingBottom="7dp"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:scrollbars="none"
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrAnimationStyle="flip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/bd_white"
+                    android:layout_below="@+id/tv"
+                    android:ems="10" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/msg"/>
+            </LinearLayout>
+
+            <com.qibei.gugu.ui.SlideShowView
+                android:id="@+id/ssv_home"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="7dp"
+                android:layout_centerHorizontal="true" >
+            </com.qibei.gugu.ui.SlideShowView>
+
+            <include layout="@layout/main_centre" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:src="@drawable/main_center"/>
+
+            <include layout="@layout/hot_doctor_layout" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="7dp"/>
+
+            <include layout="@layout/hot_hospital_layout" />
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

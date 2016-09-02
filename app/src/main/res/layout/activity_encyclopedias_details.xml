@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_encyclopedias_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="百科详情">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_eda_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="试管婴儿取精"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="14dp"
+                    android:textSize="18sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布日期 : "
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_eda_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-08-05"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_eda_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:text="来源 : "
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="网路"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_eda_logo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/appmain_1" />
+            <TextView
+                android:id="@+id/iv_eda_describe"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:text="胎儿最开始从胚胎发育而来，而胚胎的孕育离不开精子和卵子的结合，试管婴儿同样如此，其中取精是必要的流程，男性精子的品质不仅会影响试管的成功，也将关系到以后宝宝的生长发育。 那么，试管婴儿取精前需要注意哪些事项呢？我们一起来了解一下。
+1、精子不耐高温 高温对精子来说是一个非常恶劣的环境。因此，男性最好不要进行洗桑拿浴类型的活动。
+
+2、精子喜欢碱性环境 精子喜欢碱性环境，不耐酸。酸性条件会大量杀死精子。所以，在试管婴儿取精之前，最好多吃点硷性食品。
+
+3、精子会老化、死亡 精子既然在不断产生，那肯定有“生老病死”，不然的话这麽多精子就会没地方放了。因此，夫妻不用长期禁欲，成熟超过7天的精子会自然死亡。
+
+4、生产时间长 精子产生的时间很长，从产生到成熟需要90天。这麽长的时间里面，我们每一个行为都有可能影响到精子的生产品质。因此，男性要提前三个月戒烟、戒酒。
+"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

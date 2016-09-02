@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.qibei.gugu.ui.CommonTopView
+        xmlns:qb="http://schemas.android.com/apk/res/com.qibei.guagua"
+        android:id="@+id/ctv_user_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="false"
+        qb:top_title="我的">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+        <ImageView
+            android:id="@+id/iv_user_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/my_logo"/>
+        <LinearLayout
+            android:layout_toRightOf="@id/iv_user_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emily"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="健康就是财富"
+                android:textColor="#999999"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bfbfbf" />
+
+    <com.qibei.gugu.ui.HorizontalListView
+        android:id="@+id/hlv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp">
+    </com.qibei.gugu.ui.HorizontalListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E5E5E5" />
+
+    <com.qibei.gugu.ui.NavigationHeadView
+        android:id="@+id/nhv_schedule_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:nhv_title="日程管理">
+    </com.qibei.gugu.ui.NavigationHeadView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bfbfbf" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:id="@+id/scrollview_my_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/item_time_manage"></include>
+            <include layout="@layout/item_time_manage"></include>
+            <include layout="@layout/item_time_manage"></include>
+            <include layout="@layout/item_time_manage"></include>
+            <include layout="@layout/item_time_manage"></include>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

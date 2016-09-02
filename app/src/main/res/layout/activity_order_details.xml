@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:qb="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/back_gray"
+        android:orientation="vertical" >
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="订单详情">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <include layout="@layout/tablayout_order"></include>
+
+
+</LinearLayout>

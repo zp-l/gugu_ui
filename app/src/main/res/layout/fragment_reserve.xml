@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ctv_reserve"
+        qb:top_back="false"
+        qb:top_function="false"
+        qb:top_title="预定">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <com.qibei.gugu.ui.MyScrollView
+        android:scrollbars="none"
+        android:id="@+id/msv_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.qibei.gugu.ui.SlideShowView
+                android:id="@+id/slideshowView"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true" >
+            </com.qibei.gugu.ui.SlideShowView>
+
+            <include layout="@layout/view_panicbuying" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.qibei.gugu.ui.NavigationHeadView
+                    android:id="@+id/nhv_yuezi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    qb:nhv_title="月子中心">
+                </com.qibei.gugu.ui.NavigationHeadView>
+
+                <com.qibei.gugu.ui.HorizontalListView
+                    android:id="@+id/hlv_yuezi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="280dp">
+                </com.qibei.gugu.ui.HorizontalListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.qibei.gugu.ui.NavigationHeadView
+                    android:id="@+id/nhv_abroad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    qb:nhv_title="境外服务项目">
+                </com.qibei.gugu.ui.NavigationHeadView>
+
+                <com.qibei.gugu.ui.HorizontalListView
+                    android:id="@+id/hlv_abroad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="280dp">
+                </com.qibei.gugu.ui.HorizontalListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.qibei.gugu.ui.NavigationHeadView
+                    android:id="@+id/nhv_territory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    qb:nhv_title="境内服务项目">
+                </com.qibei.gugu.ui.NavigationHeadView>
+
+                <com.qibei.gugu.ui.HorizontalListView
+                    android:id="@+id/hlv_territory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="280dp">
+                </com.qibei.gugu.ui.HorizontalListView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.qibei.gugu.ui.MyScrollView>
+
+</LinearLayout>

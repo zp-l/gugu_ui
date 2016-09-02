@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/back_gray"
+        xmlns:qb="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" >
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="支付">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <include layout="@layout/item_bank_card"></include>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="手机号"
+            android:textSize="14sp"
+            />
+        <EditText
+            android:id="@+id/et_pa_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="150 7447 8436"
+            android:textSize="14sp"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bd_white"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="验证码"
+            android:textSize="14sp"
+            />
+        <EditText
+            android:id="@+id/et_pa_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="666666"
+            android:textSize="14sp"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_pa_send_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_border"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:padding="7dp"
+            android:text="@string/send_verification_code"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_pa_confirm_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#64D5C0"
+        android:text="确认支付"/>
+</LinearLayout>

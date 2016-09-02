@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="我的订单">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/item_myorder"></include>
+            <include layout="@layout/item_myorder"></include>
+            <include layout="@layout/item_myorder"></include>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

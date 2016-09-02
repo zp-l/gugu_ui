@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.qibei.gugu.ui.NavigationHeadView
+        android:id="@+id/nhv_hot_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:nhv_title="热门医院">
+    </com.qibei.gugu.ui.NavigationHeadView>
+
+    <com.qibei.gugu.ui.HorizontalListView
+        android:id="@+id/horizontallistview1"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp">
+
+    </com.qibei.gugu.ui.HorizontalListView>
+
+    <!--
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_all_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include layout="@layout/show_hospital_layout" />
+            <include layout="@layout/show_hospital_layout" />
+            <include layout="@layout/show_hospital_layout" />
+            <include layout="@layout/show_hospital_layout" />
+        </LinearLayout>
+
+    </HorizontalScrollView >
+    -->
+
+
+</LinearLayout>

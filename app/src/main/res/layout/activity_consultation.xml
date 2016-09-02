@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_consultation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_function="false"
+        qb:top_title="咨询">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <include layout="@layout/tablayout_consultation" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lv_my_bank_card"
+                android:listSelector="@android:color/transparent">
+            </ListView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bd_white"/>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:id="@+id/ll_add_bank_card"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@color/default_green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="添加新银行卡"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/iv_mbcf_next"
+                    android:layout_width="11dp"
+                    android:layout_height="19dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/button_next" >
+                </ImageView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bd_white"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

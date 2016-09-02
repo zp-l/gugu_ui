@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="个人信息">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:text="头像"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/tv_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_logo"
+           />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="11dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="7dp"
+            android:visibility="visible"
+            android:background="@drawable/button_next" >
+        </ImageView>
+    </LinearLayout>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        xmlns:qb="http://schemas.android.com/apk/res/com.qibei.guagua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="昵称"
+        qb:image_show="false"
+        qb:text_color="#000000"
+        qb:right_title="大熊小悟">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        xmlns:qb="http://schemas.android.com/apk/res/com.qibei.guagua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="性别"
+        qb:image_show="true"
+        qb:text_color="#000000"
+        qb:right_title="女">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/blank_block" />
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        xmlns:qb="http://schemas.android.com/apk/res/com.qibei.guagua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="地区"
+        qb:image_show="true"
+        qb:text_color="#000000"
+        qb:right_title="上海-徐汇">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        xmlns:qb="http://schemas.android.com/apk/res/com.qibei.guagua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="个性签名"
+        qb:image_show="true"
+        qb:text_color="#000000"
+        qb:right_title_show="false"
+        qb:right_title="上海-徐汇">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+</LinearLayout>

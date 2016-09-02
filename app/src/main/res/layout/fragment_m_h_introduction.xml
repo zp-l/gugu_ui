@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:padding="7dp"
+        android:textSize="14dp"
+        android:text="美酷宝宝美国月子生活馆【MKBB】成立于2010年，多年来致力于在美国洛杉矶本土服务海外同胞，是洛杉矶口碑第一的直营服务商。真正专业、贴心地从妈妈们的角度出发，量身定制全套赴美生子计划，真正把每一分钱都花在必要的地方。
+美酷宝宝美国月子生活馆提供服务内容包含：赴美生子咨询、赴美签证办理、海关入境指导与保障、办理国际驾照和汽车租赁、双语管家服务式待产、旅游购物休闲生活规划、洛杉矶医疗服务咨询、月子膳食料理、美国宝宝
+4大证件办理以及回国或留美子女户口学籍等从签约到回国的一站式服务。
+作为直营机构，MKBB把精力集中在服务好每一位即将拥有小天使的准妈妈。妈妈们每天快快乐乐、无忧无虑，尽情享受洛杉矶式优雅充实的待产生活，就是我们最大的职责。
+我们专营美国洛杉矶本土业务，由于更专注，我们更专业,我们用心像家人一样照顾每一位妈妈。
+免费帮大宝联系学校，安排上学，让您放心待产，大宝学习不耽误。"/>
+</LinearLayout>

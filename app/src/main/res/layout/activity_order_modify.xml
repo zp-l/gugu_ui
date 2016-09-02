@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+            <com.qibei.gugu.ui.CommonTopView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                qb:top_back="true"
+                qb:top_function="false"
+                qb:top_title="订单填写">
+            </com.qibei.gugu.ui.CommonTopView>
+
+            <include layout="@layout/item_doctor_product"></include>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/bd_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:text="购买人信息"
+                android:textSize="14sp"
+                />
+
+            <com.qibei.gugu.ui.SetOrderInfoView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                qb:left_title="中文名"
+                qb:image_show="true"
+                qb:text_color="#666666"
+                qb:right_title="李志鹏">
+            </com.qibei.gugu.ui.SetOrderInfoView>
+
+            <com.qibei.gugu.ui.SetOrderInfoView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                qb:left_title="拼音名"
+                qb:image_show="true"
+                qb:text_color="#666666"
+                qb:right_title="lizhipeng">
+            </com.qibei.gugu.ui.SetOrderInfoView>
+
+            <com.qibei.gugu.ui.SetOrderInfoView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                qb:left_title="国籍"
+                qb:text_color="#666666"
+                qb:right_title="中国">
+            </com.qibei.gugu.ui.SetOrderInfoView>
+
+            <com.qibei.gugu.ui.SetOrderInfoView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                qb:left_title="性别"
+                qb:text_color="#666666"
+                qb:right_title="男">
+            </com.qibei.gugu.ui.SetOrderInfoView>
+
+            <com.qibei.gugu.ui.SetOrderInfoView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                qb:left_title="出生年份"
+                qb:text_color="#666666"
+                qb:right_title="1992">
+            </com.qibei.gugu.ui.SetOrderInfoView>
+
+            <com.qibei.gugu.ui.SetOrderInfoView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                qb:left_title="联系电话"
+                qb:image_show="true"
+                qb:text_color="#666666"
+                qb:right_title="15074478436">
+            </com.qibei.gugu.ui.SetOrderInfoView>
+
+            <com.qibei.gugu.ui.SetOrderInfoView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                qb:left_title="证件类型"
+                qb:text_color="#666666"
+                qb:right_title="身份证">
+            </com.qibei.gugu.ui.SetOrderInfoView>
+
+            <com.qibei.gugu.ui.SetOrderInfoView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                qb:left_title="证件号码"
+                qb:image_show="true"
+                qb:text_color="#666666"
+                qb:right_title="432524199308071413">
+            </com.qibei.gugu.ui.SetOrderInfoView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_oma_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:gravity="center"
+                android:text="下一步"
+                android:background="#64D5C0"
+                android:textSize="20sp"
+                />
+
+</LinearLayout>

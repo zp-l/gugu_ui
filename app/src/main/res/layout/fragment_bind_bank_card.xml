@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bd_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请填写持卡人信息"
+            android:textSize="14sp"
+            android:layout_marginTop="7dp"
+            android:padding="7dp"
+            android:background="@color/bd_white"
+            />
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="姓名"
+                android:textSize="14sp"
+                />
+            <EditText
+                android:id="@+id/et_bbcf_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="王小二"
+                android:textSize="14sp"
+                android:background="@null"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bd_white"/>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="身份证"
+                android:textSize="14sp"
+                />
+            <EditText
+                android:id="@+id/et_bbcf_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="1234567890"
+                android:textSize="14sp"
+                android:background="@null"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bd_white"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="为了保障帐户安全，请添加您本人的银行卡"
+            android:textSize="14sp"
+            android:layout_marginTop="7dp"
+            android:padding="7dp"
+            android:background="@color/bd_white"
+            />
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="手机号"
+                android:textSize="14sp"
+                />
+            <EditText
+                android:id="@+id/et_bbcf_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="150 7447 8436"
+                android:textSize="14sp"
+                android:background="@null"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bd_white"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="验证码"
+                android:textSize="14sp"
+                />
+            <EditText
+                android:id="@+id/et_bbcf_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="666666"
+                android:textSize="14sp"
+                android:background="@null"
+                />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_bbcf_send_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_border"
+                android:layout_marginLeft="20dp"
+                android:clickable="true"
+                android:padding="7dp"
+                android:text="@string/send_verification_code"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bd_white"/>
+
+        <TextView
+            android:id="@+id/tv_bbcf_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意快捷支付服务协议"
+            android:textColor="#64D5C0"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/bt_bbcf_add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#64D5C0"
+            android:text="添加"/>
+    </LinearLayout>
+
+</LinearLayout>

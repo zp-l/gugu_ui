@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back_gray"
+    android:orientation="vertical">
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_account_security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="账号与安全">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp"
+        android:text="手机账号"
+        android:background="@color/blank_block" />
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        xmlns:qb="http://schemas.android.com/apk/res/com.qibei.guagua"
+        android:id="@+id/soiv_asa_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="手机号"
+        qb:right_title="150 7447 8436"
+        qb:image_show="true"
+        qb:text_color="#000000">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        xmlns:qb="http://schemas.android.com/apk/res/com.qibei.guagua"
+        android:id="@+id/soiv_modify_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="修改密码"
+        qb:image_show="true"
+        qb:text_color="#000000">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp"
+        android:text="第三方账号"
+        android:background="@color/blank_block" />
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        xmlns:qb="http://schemas.android.com/apk/res/com.qibei.guagua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="微信"
+        qb:image_show="true"
+        qb:right_title="未绑定"
+        qb:text_color="#000000">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        xmlns:qb="http://schemas.android.com/apk/res/com.qibei.guagua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:right_title="未绑定"
+        qb:left_title="微博"
+        qb:image_show="true"
+        qb:text_color="#000000">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:qb="http://schemas.android.com/apk/res-auto"
+android:background="@color/white"
+android:orientation="vertical">
+
+<com.qibei.gugu.ui.CommonTopView
+    android:id="@+id/ctv_about"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    qb:top_back="true"
+    qb:top_function="false"
+    qb:top_title="关于呱呱">
+</com.qibei.gugu.ui.CommonTopView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_border"
+        android:src="@drawable/logo"
+        android:padding="3dp"  />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="呱呱试管 V3.0"/>
+
+</LinearLayout>
+
+<TextView
+    android:padding="14dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:text="欢迎使用呱呱试管，呱呱试管是上海祈贝健康管理咨询有限公司旗下的一款专注于试管婴儿服务的软件，公司创立于 2015 年 8 月，是一家移动医疗领域里专注试管婴儿的健康管理咨询公司。公司旨在为国内广大患者和家庭提供一个境内境外做试管婴儿治疗服务的高品质、高标准、专业透明的特色移动医疗服务平台。"/>
+
+<TextView
+    android:padding="7dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:layout_gravity="center"
+    android:text="微信公众号:祈贝孕育"/>
+<TextView
+    android:padding="7dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:layout_gravity="center"
+    android:text="客服QQ:12345678"/>
+<TextView
+    android:padding="7dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:layout_gravity="center"
+    android:text="客服电话:12345678"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+<TextView
+    android:id="@+id/tv_clause"
+    android:padding="7dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/default_green"
+    android:layout_gravity="center"
+    android:text="服务条款"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:gravity="center"
+    android:textColor="@color/copyright"
+    android:text="@string/copyright"/>
+
+</LinearLayout>

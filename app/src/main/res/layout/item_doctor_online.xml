@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="10dp"
+	android:layout_marginBottom="10dp"
+	android:gravity="center_vertical"
+	android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/img_child"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:layout_marginLeft="20dp"
+			android:src="@drawable/my_logo"
+			android:layout_centerVertical="true"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginLeft="20dp">
+			<LinearLayout
+				android:layout_marginBottom="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/tv_child_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="xiangjiao"
+					android:layout_marginRight="5dp"
+					android:textSize="18sp"/>
+				<TextView
+					android:id="@+id/tv_online"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="[在线]"
+					android:textColor="#4F9EF9"
+					android:textSize="16sp"/>
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/tv_hospital_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="上海金瑞医院"
+				android:textSize="16sp"/>
+		</LinearLayout>
+
+		<ImageView
+			android:layout_width="32dp"
+			android:layout_height="32dp"
+			android:layout_marginLeft="50dp"
+			android:layout_marginRight="30dp"
+			android:src="@drawable/btn_talk"/>
+
+		<ImageView
+			android:layout_width="32dp"
+			android:layout_height="32dp"
+			android:src="@drawable/btn_video"/>
+
+ 
+</LinearLayout>

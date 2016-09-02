@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/llyout_my_coupon_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#d7d7d7" />
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_my_coupon_tab"
+            android:gravity="center"
+            android:onClick="notSpending"
+            android:text="订单状态"
+            android:textColor="#898787" />
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#d7d7d7" />
+        <TextView
+            android:id="@+id/tv_order_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_my_coupon_tab"
+            android:gravity="center"
+            android:onClick="yetSpwnt"
+            android:text="订单详情"
+            android:textColor="#898787" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_tabLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:contentDescription="@null"
+        android:scaleType="matrix" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginBottom="5dp"
+        android:background="#d7d7d7" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

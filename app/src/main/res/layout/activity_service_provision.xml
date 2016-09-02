@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        xmlns:qb="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" >
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_spa_provision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="服务条款">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="免责条款"
+                android:textSize="20sp"
+                android:paddingLeft="14dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="1)呱呱用户在咨询时，如因自身原因，不能正确填写或描述自己当前病历信息而导致的所有问题，呱呱试管不负任何责任。
+2)呱呱试管致力于提供正确、完整的相关信息，但不保证信息的准确性。呱呱试管提供的任何医疗相关信息，仅供参考，不能替代任何参考。如有自行使用本客户端资料发现偏差，本公司概不负责，亦不负任何法律责任。
+3)用户在妈妈宝典发表的言论和信息，包含但不限于用户对自己就医经验的分享、饮食调节、用药情况等，是用户个人意见的表达，并不代表呱呱试管的立场和态度。用户是否采纳这些言论和信息，或基于其他用户发表的言论和信息进行了某些行为，纯属该用户个人的医院和选择，呱呱试管不负任何责任。
+4)本公司保留对本政策作为不定时修改的权利。
+5)本客户端版权的内容无法一一和版权所有人联系，如版权所有人认为不应免费使用，或有其他要求，请及时联系上海祈贝健康管理咨询有限公司。
+6)此软件内容受知识产品法保护，不得擅自复制传播或用于其他商业用途，本公司保留相应的法律权利。
+7)本软件声明及修改、更新、最终解释权归上海祈贝健康管理咨询有限公司所有。"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="隐私条款"
+                android:textSize="20sp"
+                android:paddingLeft="14dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="1)呱呱试管不会向任何人出售或借用您的个人信息，除非事先得到您的许可。
+2)为服务用户的目的，呱呱试管可能通过使用您的个人信息，向您提供服务，包括但不限于向您发出活动和服务信息等。经您的同意，您的个人信息可以向第三方披露。
+3)根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露您的个人信息。
+4)如果您出现有关违反中华人民共和国法律或网站政策的情况，需要向第三方披露您的个人信息。
+5)在您使用呱呱试管服务时，网站自动接收并记录您的相关服务器数据，包括但不限于IP地址、cookie中的资料及您要求取用的网页记录。
+6)注册成功后，会员必须保护好自己的账号和密码，因会员本人泄露而造成的任何损失由会员本人负责。
+7)不得盗用他人账号，由此造成的后果自己负责。
+"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

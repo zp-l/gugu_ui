@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        xmlns:qb="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" >
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="注册">
+    </com.qibei.gugu.ui.CommonTopView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/accountRel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="45dp"
+                    android:clickable="true"
+                    android:background="@drawable/login_border"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/phone_number"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/accountEdittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/account"
+                        android:background="@null"
+                        android:hint="@string/phone_number_hint"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="14dp">
+                    <RelativeLayout
+                        android:id="@+id/re_verification"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_border"
+                        android:clickable="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_rerification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="@string/verification_code"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:id="@+id/massgeEdittext"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_toRightOf="@id/tv_rerification"
+                            android:background="@null"
+                            android:hint="@string/verification_code_hint"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_send_rerification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/register_border"
+                        android:layout_marginLeft="20dp"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:text="@string/send_verification_code"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pwdRel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_border"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/pwd"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/pwdEdittext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dip"
+                        android:background="@null"
+                        android:hint="@string/pwd_hint2"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0" />
+
+                    <ImageView
+                        android:id="@+id/im_showpad"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:clickable="true"
+                        android:src="@drawable/home"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_ra_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pwdRel"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="7dp"
+                    android:textSize="12sp"
+                    android:textColor="#FF0000"
+                    android:text="请输入8至16位密码"/>
+
+            <Button
+                android:id="@+id/bu_register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#64D5C0"
+                android:layout_marginTop="20dp"
+                android:text="@string/register"/>
+
+            <TextView
+                android:id="@+id/agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="@string/agreement"
+                android:clickable="true"
+                android:textColor="#64D5C0" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>

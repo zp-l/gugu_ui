@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:qb="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back_gray"
+    android:orientation="vertical">
+
+    <com.qibei.gugu.ui.CommonTopView
+        android:id="@+id/ctv_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:top_back="true"
+        qb:top_function="false"
+        qb:top_title="设置">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:id="@+id/soiv_security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="账号与安全"
+        qb:image_show="true"
+        qb:text_color="#000000">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:id="@+id/soiv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="检查更新"
+        qb:image_show="true"
+        qb:text_color="#000000">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:text="推送设置"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ToggleButton
+            android:id="@+id/mTogBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:button="@drawable/toggle_btn"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bfbfbf"/>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:id="@+id/soiv_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="清除缓存"
+        qb:image_show="true"
+        qb:text_color="#000000">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/blank_block" />
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:id="@+id/soiv_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="关于呱呱"
+        qb:image_show="true"
+        qb:text_color="#000000">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <com.qibei.gugu.ui.SetOrderInfoView
+        android:id="@+id/soiv_advise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qb:left_title="反馈意见"
+        qb:image_show="true"
+        qb:text_color="#000000">
+    </com.qibei.gugu.ui.SetOrderInfoView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/exit_login"
+        android:textSize="20sp"/>
+
+</LinearLayout>

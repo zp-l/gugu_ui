@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingRight="7dp"
+        android:paddingLeft="7dp"
+        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/iv_fea__logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/encyclopedias"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="7dp"
+        android:paddingLeft="7dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_fea_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="试管婴儿取精"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="15dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_fea_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="胎儿最开始从胚胎发育而来，而胚胎的孕育离不开精子和卵子的结合，试管婴儿同样如此，其中取精是必要的流程，"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="15dp"
+            android:paddingRight="7dp"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="7dp"
+        android:background="#DBDBDB"
+        />
+</LinearLayout>

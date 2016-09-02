@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.qibei.gugu.ui.CommonTopView
+        xmlns:qb="http://schemas.android.com/apk/res/com.qibei.guagua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/head"
+        qb:top_back="false"
+        qb:top_function="false"
+        qb:top_title="妈妈宝典">
+    </com.qibei.gugu.ui.CommonTopView>
+
+    <include layout="@layout/tablayout_mmbd" />
+
+</LinearLayout>
