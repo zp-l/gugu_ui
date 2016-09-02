@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.qibei.gugu.grid;
+package com.qibei.gugu.ui.flowlayout;
 
 import android.os.Parcel;
 import android.os.Parcelable;

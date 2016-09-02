@@ -1,4 +1,4 @@
-package com.qibei.gugu.grid.util;
+package com.qibei.gugu.ui.flowlayout.util;
 
 import android.content.Context;
 import android.util.AttributeSet;

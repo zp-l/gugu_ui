@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.qibei.gugu.grid;
+package com.qibei.gugu.ui.flowlayout;
 
 import android.database.DataSetObserver;
 import android.view.View;

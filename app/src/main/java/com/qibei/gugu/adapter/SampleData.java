@@ -1,4 +1,4 @@
-package com.qibei.gugu.sample;
+package com.qibei.gugu.adapter;
 
 import java.util.ArrayList;
 

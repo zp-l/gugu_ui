@@ -43,8 +43,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         ll_my.setOnClickListener(this);
         //  默认进入首页
         setSelect(0);
-
-//        Intent intent = new Intent(this, PullToRefreshListActivity.class);
+//
+//        Intent intent = new Intent(this, GridTestActivity.class);
 //        startActivity(intent);
     }
 

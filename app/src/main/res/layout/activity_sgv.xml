@@ -1,4 +1,4 @@
-<com.qibei.gugu.grid.StaggeredGridView
+<com.qibei.gugu.ui.flowlayout.StaggeredGridView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/grid_view"

@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:descendantFocusability="blocksDescendants">
 
-    <com.qibei.gugu.grid.util.DynamicHeightTextView
+    <com.qibei.gugu.ui.flowlayout.util.DynamicHeightTextView
         android:id="@+id/txt_line1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

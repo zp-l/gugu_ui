@@ -1,7 +1,5 @@
-package com.qibei.gugu.sample;
+package com.qibei.gugu.adapter;
 
-
-import java.util.ArrayList;
 import java.util.Random;
 
 import android.content.Context;
@@ -11,28 +9,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.Toast;
 
 import com.qibei.gugu.R;
-import com.qibei.gugu.grid.util.DynamicHeightTextView;
-
-/***
- * ADAPTER
- */
+import com.qibei.gugu.ui.flowlayout.util.DynamicHeightImageView;
 
 public class SampleAdapter extends ArrayAdapter<String> {
 
     private static final String TAG = "SampleAdapter";
 
     static class ViewHolder {
-        DynamicHeightTextView txtLineOne;
-        Button btnGo;
+        DynamicHeightImageView dhiv;
+//        Button btnGo;
     }
 
     private final LayoutInflater mLayoutInflater;
     private final Random mRandom;
-    private final ArrayList<Integer> mBackgroundColors;
+//    private final ArrayList<Integer> mBackgroundColors;
 
     private static final SparseArray<Double> sPositionHeightRatios = new SparseArray<Double>();
 
@@ -40,12 +32,12 @@ public class SampleAdapter extends ArrayAdapter<String> {
         super(context, textViewResourceId);
         mLayoutInflater = LayoutInflater.from(context);
         mRandom = new Random();
-        mBackgroundColors = new ArrayList<Integer>();
-        mBackgroundColors.add(R.color.orange);
-        mBackgroundColors.add(R.color.green);
-        mBackgroundColors.add(R.color.blue);
-        mBackgroundColors.add(R.color.yellow);
-        mBackgroundColors.add(R.color.grey);
+//        mBackgroundColors = new ArrayList<Integer>();
+//        mBackgroundColors.add(R.color.orange);
+//        mBackgroundColors.add(R.color.green);
+//        mBackgroundColors.add(R.color.blue);
+//        mBackgroundColors.add(R.color.yellow);
+//        mBackgroundColors.add(R.color.grey);
     }
 
     @Override
@@ -53,10 +45,9 @@ public class SampleAdapter extends ArrayAdapter<String> {
 
         ViewHolder vh;
         if (convertView == null) {
-            convertView = mLayoutInflater.inflate(R.layout.list_item_sample, parent, false);
+            convertView = mLayoutInflater.inflate(R.layout.item_mm_share, parent, false);
             vh = new ViewHolder();
-            vh.txtLineOne = (DynamicHeightTextView) convertView.findViewById(R.id.txt_line1);
-            vh.btnGo = (Button) convertView.findViewById(R.id.btn_go);
+            vh.dhiv = (DynamicHeightImageView) convertView.findViewById(R.id.dhiv_image);
 
             convertView.setTag(vh);
         }
@@ -65,23 +56,22 @@ public class SampleAdapter extends ArrayAdapter<String> {
         }
 
         double positionHeight = getPositionRatio(position);
-        int backgroundIndex = position >= mBackgroundColors.size() ?
-                position % mBackgroundColors.size() : position;
+//        int backgroundIndex = position >= mBackgroundColors.size() ?
+//                position % mBackgroundColors.size() : position;
 
-        convertView.setBackgroundResource(mBackgroundColors.get(backgroundIndex));
+        vh.dhiv.setBackgroundResource(R.drawable.item_mm_share);
 
-        Log.d(TAG, "getView position:" + position + " h:" + positionHeight);
+//        Log.d(TAG, "getView position:" + position + " h:" + positionHeight);
 
-        vh.txtLineOne.setHeightRatio(positionHeight);
-        vh.txtLineOne.setText(getItem(position) + position);
+        vh.dhiv.setHeightRatio(positionHeight);
 
-        vh.btnGo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                Toast.makeText(getContext(), "Button Clicked Position " +
-                        position, Toast.LENGTH_SHORT).show();
-            }
-        });
+//        vh.btnGo.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(final View v) {
+//                Toast.makeText(getContext(), "Button Clicked Position " +
+//                        position, Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         return convertView;
     }

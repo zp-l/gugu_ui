@@ -1,28 +1,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="170dp"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:layout_marginBottom="22dp"
-              android:layout_marginLeft="5dp"
-              android:layout_marginRight="5dp"
               android:orientation="vertical">
 
-            <ImageView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/item_mm_share"/>
+            <com.qibei.gugu.ui.flowlayout.util.DynamicHeightImageView
+                android:id="@+id/dhiv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="健康备孕很重要"
             android:textColor="#333333"
-            android:textSize="18sp"
             android:layout_marginTop="14dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="7dp" />
 
     <RelativeLayout
-        android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -39,7 +35,6 @@
             android:layout_marginLeft="5dp"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/iv_share_logo"
-            android:textSize="18dp"
             android:text="Emily"
             android:textColor="#333333"
             android:layout_gravity="center_vertical"/>
@@ -61,7 +56,6 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
-            android:textSize="18dp"
             android:text="999"
             android:textColor="#757575"
             android:layout_alignParentRight="true"

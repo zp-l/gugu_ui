@@ -79,7 +79,6 @@
         <!--查百科 -->
         <activity android:name="com.qibei.gugu.activity.EncyclopediasDetailActivity"></activity>
 
-        <activity android:name="com.qibei.gugu.sample.StaggeredGridActivity"/>
         <activity android:name="com.qibei.gugu.sample.StaggeredGridActivityFragment"/>
         <activity android:name="com.qibei.gugu.sample.StaggeredGridEmptyViewActivity" />
         <activity android:name="com.qibei.gugu.sample.ListViewActivity"/>
@@ -108,7 +107,6 @@
 
         <!--刷新框架 -->
         <activity android:name="com.qibei.gugu.PullToRefreshListActivity"></activity>
-
 
 
     </application>
